@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+    text-align: left;
     font-size: 18px;
     font-weight: normal;
     
@@ -107,6 +108,12 @@ hr {
  
 }
 
+.header_photo_mob {
+    display: none;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
 /* section */
 
 .section {
@@ -179,6 +186,8 @@ hr {
     line-height: 17px;
     max-width: 90px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
     color: #828282;
     text-align: center;
@@ -194,7 +203,7 @@ hr {
     position: relative;
     display: flex;
     justify-content: space-between;
-    left: -9px;
+    left: 0;
 }
 .star {
 
@@ -262,4 +271,63 @@ hr {
 
 .social {
     margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+    .program_item {
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav_inner {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+
+    .header {
+        justify-content: inherit;
+    }
+
+    .name {
+        
+    }
+
+    .subtitle {
+        padding-top: 1px;
+        position: relative;
+        left: 0;
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .header_photo {
+        display: none;
+    }
+    .header_photo_mob {
+        display: flex;
+    }
+
+    .program_box {
+        flex-direction: column;
+    }
+    .stars_line {
+        margin-bottom: 60px;
+        justify-content: space-around;
+    }
+
+    .program_text{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .program_item {
+        scale: 1;
+    }
 }
