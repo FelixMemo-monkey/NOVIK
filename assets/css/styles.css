@@ -41,7 +41,7 @@ hr {
     position: relative;
     width: 100%;
     padding: 0 15px 0 15px;
-    max-width: 1230px;
+    max-width: 2500px;
     margin:  auto auto auto auto ;
    
     
@@ -58,14 +58,23 @@ hr {
 }
 
 .nav {
-    color: #828282;
+    color: #070707;
+    opacity: 0.4;
     font-weight: bold;
     font-size: 18px;
 
 }
 
+.nav:hover {
+   opacity: 0.6; 
+}
+
+.nav:active {
+    scale: 0.9;
+}
+
 .nav.active {
-    color: #070707;
+    opacity: 1;
 }
 
 /* Header */
@@ -94,11 +103,15 @@ hr {
 
 .lang {
     writing-mode: sideways-lr;
-  
+    color: black;
     position: absolute;
     right: 0;
     bottom: 40;
     margin-right: 18px;
+}
+
+.lang_item {
+    color: black;
 }
 
 .header_photo {
@@ -267,9 +280,13 @@ hr {
     position: relative;
     color: white;
     bottom: 32px;
+    text-decoration-line: none;
 }
 
 .social {
+    
+    max-width: 350px;
+    width: 100%;
     margin-top: 80px;
 }
 
